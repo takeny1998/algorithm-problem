@@ -16,7 +16,7 @@ def solution(N: int, M: int, H: int):
     def dfs(idx: int, y: int, x: int, added: int):
         global answer
 
-        if added > answer:
+        if added >= answer:
             return
             
         # 맨 밑으로 내려오면 끝
