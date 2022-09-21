@@ -1,5 +1,5 @@
 def dfs(y, x, d, visited):
-    global iy, ix, answer, move
+    global iy, ix, answer
     # end조건
     if (y, x) == (iy, ix) and len(visited) > 1 and d == 3:
         answer = max(answer, len(visited))
@@ -18,8 +18,6 @@ def dfs(y, x, d, visited):
             dfs(ny, nx, d + 1, visited[:])
 
 
-import sys
-sys.stdin = open("input.txt", "r")
 
 T = int(input())
 
