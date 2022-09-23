@@ -6,42 +6,46 @@ def check():
                 num += 1
             else:
                 num = 0            
-            if num == 2:
+            if num == (standard - 1):
                 break
-        if num < 2:
+        if num < (standard - 1):
             return False                
     return True
 
 
-def dfs(y, count):
-    print(y, count)
-    if check():
-        print(count)
+def dfs(y, count, inject):
+    global answer
+    if count > answer:
         return
 
-    for val in range(2):
-        # 해당 행을 A, B로 바꿈
-        for x in range(width):
-            field[y][x] = val
-        
-        for i in range(y + 1, height):
-            dfs(i, count + 1)
-        
-        
+    if check():
+        answer = min(answer, count)
+    
+    if y < height:
+        for val in range(2):
+            temp = field[y][:]
+            # 해당 행을 A, B로 바꿈
+            field[y] = [val for _ in range(width)]
+            inject.append((y, val))
+            for i in range(y + 1, height + 1):
+                dfs(i, count + 1,  inject)
+            inject.pop()
+            field[y] = temp[:]
 
-#import sys
-#sys.stdin = open("input.txt", "r")
 
 T = int(input())
 # 여러개의 테스트 케이스가 주어지므로, 각각을 처리합니다.
 for test_case in range(1, T + 1):
     height, width, standard = map(int, input().split())
     field = []
+    answer = 9999999999
 
     for _ in range(height):
         line = list(map(int, input().split()))
         field.append(line)
     
     # ///////////////////////////////////////////////////////////////////////////////////
-    dfs(0, 0)
+    for i in range(height):
+        dfs(i, 0, [])
+    print(f'#{test_case} {answer}')
     # ///////////////////////////////////////////////////////////////////////////////////
