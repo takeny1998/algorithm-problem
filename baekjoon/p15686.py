@@ -70,6 +70,7 @@
 
 
 from itertools import combinations
+
 def solution(field):
     home = []
     chicken = []
