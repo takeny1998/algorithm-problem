@@ -45,7 +45,6 @@ def solution():
     sec = 0
     
     while True:
-
         # 다음 목적지 정하기
         min_dist, ny, nx = bfs(sy, sx)
         if min_dist == 99999999999:
