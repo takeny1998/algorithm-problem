@@ -146,11 +146,6 @@ def solution():
         
         field[iy][ix] += ['C', id]
 
-        # for line in field:
-        #     for elm in line:
-        #         print('%12s' % elm, end=' ')
-        #     print()
-        # print('----------------------------')
         score += (t * catch)
         
 
