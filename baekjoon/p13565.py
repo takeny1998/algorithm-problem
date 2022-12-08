@@ -18,6 +18,7 @@ def bfs(y, x):
                     queue.append((ny, nx))
     return False
 
+
 def solution():
     global visited
     visited = [[0 for _ in range(N)] for _ in range(M)]
