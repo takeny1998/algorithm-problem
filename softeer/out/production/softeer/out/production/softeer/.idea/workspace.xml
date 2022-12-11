@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0bf4bb74-f0ec-4837-a69c-f3894ae4a7ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Intersection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Intersection.java" afterDir="false" />
+    <list default="true" id="3eff4e62-4da9-4b96-bf74-c6b010578b9c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.idea/algorithm-problem.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../softeer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/src.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/softeer.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,12 +16,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2HXEG3lbYRmaKP3Q9hlqbzvjIBv" />
+  <component name="ProjectId" id="2HXEK97qrwniSMBR1zXoW3tGzIZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -24,23 +29,22 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/i7/Documents/GitHub/java-bridge"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0bf4bb74-f0ec-4837-a69c-f3894ae4a7ed" name="Changes" comment="" />
-      <created>1668422929106</created>
+      <changelist id="3eff4e62-4da9-4b96-bf74-c6b010578b9c" name="Changes" comment="" />
+      <created>1668422966782</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1668422929106</updated>
-      <workItem from="1668422930573" duration="6000" />
-      <workItem from="1668427286304" duration="5513000" />
-      <workItem from="1668933277425" duration="61000" />
+      <updated>1668422966782</updated>
+      <workItem from="1668422969484" duration="212000" />
     </task>
     <servers />
   </component>
