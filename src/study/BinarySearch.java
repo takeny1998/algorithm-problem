@@ -18,7 +18,7 @@ public class BinarySearch {
             else right = mid;
         }
 
-        return -1;
+        return right;
     }
 
     private static int lowerBound(int key) {
