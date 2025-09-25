@@ -6,7 +6,6 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 import java.util.StringTokenizer;
@@ -30,7 +29,7 @@ public class p1967 {
 
     private static StringTokenizer st;
 
-    private static int N, answer = 0;
+    private static int N;
 
     private static List<Edge>[] edges;
 
