@@ -79,9 +79,7 @@ public class p1043 {
                 }
             }
 
-            if (!hasTruth) {
-                answer ++;
-            }
+            if (!hasTruth) answer ++;
         }
 
         bw.write(answer + "\n");

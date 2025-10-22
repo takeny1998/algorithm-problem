@@ -9,15 +9,12 @@ public class p1541 {
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     
     public static void main(String[] args) throws Exception {
-        
         String[] exprs = br.readLine().split("-");
         
         int answer = 0;
 
         for (int i = 0; i < exprs.length; i ++) {
-            
             String expr = exprs[i];
-
             int num = 0;
 
             if (expr.contains("+")) {
