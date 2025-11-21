@@ -1,4 +1,4 @@
-package study.search.binary.java;
+package search.binary.java;
 
 import java.util.Scanner;
 
@@ -14,6 +14,21 @@ public class BinarySearch {
 
             if (nums[mid] == key)
                 return mid;
+
+            if (nums[mid] < key)
+                left = mid + 1;
+            else
+                right = mid;
+        }
+
+        return right;
+    }
+
+    private static int lowerBound(int key) {
+        int left = 0, right = nums.length - 1;
+
+        while (left < right) {
+            int mid = (left + right) / 2;
 
             if (nums[mid] < key)
                 left = mid + 1;
@@ -49,6 +64,7 @@ public class BinarySearch {
         System.out.println("lowerBound : " + lowerBound(key));
         System.out.println("upperBound : " + upperBound(key));
 
+        scanner.close();
     }
 
 }
