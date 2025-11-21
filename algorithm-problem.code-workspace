@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "practice",
+			"name": "practice"
+		},
+		{
+			"path": "study",
+			"name": "study"
+		}
+	],
+	"settings": {
+		// ===== 에디터 기본 =====
+		"editor.tabSize": 4,
+		"editor.insertSpaces": true,
+		"editor.renderWhitespace": "boundary", // 공백 보기
+		"files.trimTrailingWhitespace": true, // 줄 끝 공백 제거
+		"files.insertFinalNewline": true,
+		// ===== 자바 전용 기본 =====
+		"[java]": {
+			"editor.tabSize": 4
+		},
+		// JDK 자동 검색 (대부분 기본값이면 충분)
+		"java.configuration.runtimes": [
+			{
+				"name": "JavaSE-17",
+				"path": "/Users/heebeom/Library/Java/JavaVirtualMachines/corretto-17.0.16/Contents/Home",
+				"default": true
+			}
+		],
+	}
+}

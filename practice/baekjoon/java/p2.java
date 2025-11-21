@@ -1,6 +1,10 @@
 package baekjoon;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 
 public class p2 {
     public static String solution(String[] preferences) {
@@ -27,7 +31,7 @@ public class p2 {
 
     public static void main(String[] args) {
 
-        String[][] preferences = { {"CS", "SV"}, {"SV", "VS", "SV", "VS"}, {"CM", "MS", "SC"} };
+        String[][] preferences = { { "CS", "SV" }, { "SV", "VS", "SV", "VS" }, { "CM", "MS", "SC" } };
 
         solution(preferences[0]);
         solution(preferences[1]);

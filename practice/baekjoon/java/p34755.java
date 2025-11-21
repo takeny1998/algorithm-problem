@@ -28,6 +28,11 @@ public class p34755 {
             return Integer.compare(rank, marine.rank);
         }
 
+        @Override
+        public String toString() {
+            return "(rank=%d, honor=%d, serial=%d)".formatted(rank, honor, serial);
+        }
+
     }
 
     private static final BufferedReader br = new BufferedReader(
@@ -44,9 +49,9 @@ public class p34755 {
 
     private static int[] ranks, honors;
 
-    private static Marine[] marines;
+    private static List<Marine> marines;
 
-    private static Map<Integer, Marine> marineIndex;
+    private static Map<Integer, Integer> marineIndex;
 
     private static int upperBound(int target) {
         
@@ -55,6 +60,20 @@ public class p34755 {
         while (low < high) {
             int mid = (low + high) / 2;
             if (mid <= target) low = mid + 1;
+            else high = mid;
+        }
+
+        return high;
+    }
+
+    private static int lowerBound(Marine target) {
+
+        int low = 1, high = N;
+
+        while (low < high) {
+            int mid = (low + high) / 2;
+
+            if (marines.get(mid).compareTo(target) < 0) low = mid + 1;
             else high = mid;
         }
 
@@ -78,13 +97,19 @@ public class p34755 {
         }
         
         marineIndex = new HashMap<>();
-        marines = new Marine[N + 1];
+        marines = new ArrayList<>();
+        marines.add(null);
+
         for (int i = 1; i <= N; i ++) {
             Marine marine = new Marine(ranks[i], honors[i], i);
-            marines[i] = marine;
-            marineIndex.put(i, marine);
+            marines.add(marine);
         }
-        Arrays.sort(marines);
+
+        Collections.sort(marines);
+
+        for (int i = 1; i <= N; i ++) {
+            marineIndex.put(marines.get(i).serial, i);
+        }
 
         Q = Integer.parseInt(br.readLine());
 
@@ -95,14 +120,15 @@ public class p34755 {
             int command = Integer.parseInt(st.nextToken());
             int to = Integer.parseInt(st.nextToken());
 
-            Marine marine = marineIndex.get(to);
-
+            Marine marine = marines.get(marineIndex.get(to));
+            Marine senior = null;
+            
             if (command == 1) {
                 marine.rank = Integer.parseInt(st.nextToken());
                 marine.honor = Integer.parseInt(st.nextToken());
 
             } else {
-                Marine senior = marines[upperBound(to)];
+                senior = marines.get(upperBound(to));
                 int diff = marine.honor / 2;
 
                 if (marine.serial == senior.serial || (marine.rank == senior.rank && marine.honor == senior.honor)) {
@@ -115,7 +141,20 @@ public class p34755 {
                 }
             }
             
-            Arrays.sort(marines);
+            int i = marineIndex.get(marine.serial);
+            marines.remove(i);
+            int index = lowerBound(marine);
+            marines.add(index, marine);
+            marineIndex.put(marine.serial, Math.min(N, index + 1));
+
+            if (senior != null) {
+                int si = marineIndex.get(senior.serial);
+                marines.remove(si);
+
+                int seniorIdx = lowerBound(senior);
+                marines.add(seniorIdx, senior);
+                marineIndex.put(senior.serial, Math.min(N, seniorIdx + 1));
+            }
         }
         bw.flush();
     }

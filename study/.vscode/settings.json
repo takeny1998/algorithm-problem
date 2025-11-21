@@ -1,0 +1,10 @@
+{
+    "editor.formatOnSave": true, // 저장 시 자동 포맷
+    "[java]": {
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit" // 저장 시 import 정리
+        }
+    },
+}

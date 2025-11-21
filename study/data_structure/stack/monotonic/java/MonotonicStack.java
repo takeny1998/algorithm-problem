@@ -1,4 +1,4 @@
-package study;
+package study.data_structure.binary_search.java;
 
 import java.util.Arrays;
 import java.util.Stack;

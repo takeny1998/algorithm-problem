@@ -9,10 +9,10 @@
   "editor.parameterHints.enabled": false,
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.snippetSuggestions": "none",
-"editor.hover.enabled": false,
-"java.project.sourcePaths": [
-    "src"
-],
-"java.project.referencedLibraries": [],
-"java.project.outputPath": "out"
+  "editor.hover.enabled": false,
+  "java.project.sourcePaths": [
+      "src"
+  ],
+  "java.project.referencedLibraries": [],
+  "java.project.outputPath": "out"
 }
