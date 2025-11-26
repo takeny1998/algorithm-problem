@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -9,11 +8,11 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 public class p1005 {
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-    
+
     private static StringTokenizer st;
 
     private static int T, N, K, W, X, Y, answer;
@@ -40,11 +39,11 @@ public class p1005 {
     }
 
     public static void main(String[] args) throws Exception {
-        
+
         T = Integer.parseInt(br.readLine());
 
         for (int t = 0; t < T; t ++) {
-            answer = 0; 
+            answer = 0;
 
             st = new StringTokenizer(br.readLine());
 
@@ -85,5 +84,5 @@ public class p1005 {
 
         bw.flush();
     }
-    
+
 }

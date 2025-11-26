@@ -1,14 +1,13 @@
-package baekjoon;
 
 import java.io.*;
 import java.util.*;
 
 public class p15652 {
-    
-    private static final BufferedReader br = 
+
+    private static final BufferedReader br =
             new BufferedReader(new InputStreamReader(System.in));
 
-    private static final BufferedWriter bw = 
+    private static final BufferedWriter bw =
             new BufferedWriter(new OutputStreamWriter(System.out));
 
     private static StringTokenizer st;
@@ -20,7 +19,7 @@ public class p15652 {
             bw.write(prefix + "\n");
             return;
         }
-        
+
         for (int next = prev; next <= N; next ++) {
             if (prefix.isBlank()) dfs(next + "", next, depth + 1);
             else dfs(prefix + " " + next, next, depth + 1);

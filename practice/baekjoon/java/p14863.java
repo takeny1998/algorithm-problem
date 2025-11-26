@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -8,7 +7,7 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class p14863 {
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -28,10 +27,10 @@ public class p14863 {
         N = Integer.parseInt(st.nextToken());
         K = Integer.parseInt(st.nextToken());
 
-        wWalk = new int[N + 1]; 
+        wWalk = new int[N + 1];
         vWalk = new int[N + 1];
 
-        wCycle = new int[N + 1]; 
+        wCycle = new int[N + 1];
         vCycle = new int[N + 1];
 
         for (int i = 1; i <= N; i ++) {

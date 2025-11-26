@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -11,7 +10,7 @@ import java.util.List;
 public class p1660 {
 
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    
+
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
     private static final List<Integer> nodes = new ArrayList<>();
@@ -46,9 +45,9 @@ public class p1660 {
                 dp[n] = Math.min(dp[n], dp[n - node] + 1);
             }
         }
-        
+
         bw.write(dp[N] + "\n");
         bw.flush();
     }
-    
+
 }

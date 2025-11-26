@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -11,7 +10,7 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class p1967 {
-    
+
     private static class Edge {
 
         private final int to, dist;
@@ -24,7 +23,7 @@ public class p1967 {
     }
 
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    
+
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
     private static StringTokenizer st;
@@ -45,11 +44,11 @@ public class p1967 {
 
         while (!queue.isEmpty()) {
             Edge curt = queue.poll();
-            
+
             if (curt.dist > maxEdge.dist) {
                 maxEdge = curt;
             }
-            
+
             for (Edge next : edges[curt.to]) {
                 if (visited[next.to]) continue;
                 visited[next.to] = true;
@@ -72,7 +71,7 @@ public class p1967 {
 
         for (int i = 1; i < N; i ++) {
             st = new StringTokenizer(br.readLine());
-            
+
             int from = Integer.parseInt(st.nextToken());
             int to = Integer.parseInt(st.nextToken());
             int dist = Integer.parseInt(st.nextToken());

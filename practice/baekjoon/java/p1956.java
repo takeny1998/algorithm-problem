@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -8,11 +7,11 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class p1956 {
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-    
+
     private static StringTokenizer st;
 
     private static long[][] dists;
@@ -20,7 +19,7 @@ public class p1956 {
     private static int V, E, a, b, c;
 
     public static void main(String[] args) throws Exception {
-        
+
         st = new StringTokenizer(br.readLine());
 
         V = Integer.parseInt(st.nextToken());
@@ -49,7 +48,7 @@ public class p1956 {
             for (int start = 1; start <= V; start ++) {
                 for (int end = 1; end <= V; end ++) {
 
-                    
+
                     dists[start][end] = Math.min(
                         dists[start][mid] + dists[mid][end], dists[start][end]);
                 }

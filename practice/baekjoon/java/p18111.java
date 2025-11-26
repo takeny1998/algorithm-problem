@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -9,7 +8,7 @@ import java.util.StringTokenizer;
 public class p18111 {
 
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    
+
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
     private static StringTokenizer st;

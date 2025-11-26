@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -7,7 +6,7 @@ import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
 public class p13397 {
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -17,7 +16,7 @@ public class p13397 {
     private static int N, M, start = 0, end = 0;
 
     private static int[] nums;
-    
+
     private static int parametricSearch() {
 
         while (start < end) {
@@ -47,7 +46,7 @@ public class p13397 {
     }
 
     public static void main(String[] args) throws Exception {
-    
+
         st = new StringTokenizer(br.readLine());
 
         N = Integer.parseInt(st.nextToken());

@@ -1,10 +1,9 @@
-package baekjoon;
 
 import java.io.*;
 import java.util.*;
 
 public class p2178 {
-    
+
     private static class Element {
 
         int y, x, dist;
@@ -24,20 +23,20 @@ public class p2178 {
     private static StringTokenizer st;
 
     private static final int[] DY = { -1, 0, 1, 0 }, DX = { 0, 1, 0, -1 };
-    
+
     private static int[][] matrix, dists;
 
     private static int N, M;
 
     private static void bfs() {
-        
+
         Queue<Element> queue = new ArrayDeque<>();
-        
+
         queue.add(new Element(0, 0, 1));
         dists[0][0] = 1;
 
         while(!queue.isEmpty()) {
-            
+
             Element curt = queue.poll();
 
             for (int d = 0; d < 4; d ++) {
@@ -52,7 +51,7 @@ public class p2178 {
         }
 
     }
-    
+
     public static void main(String[] args) throws Exception {
 
         st = new StringTokenizer(br.readLine());

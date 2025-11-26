@@ -1,10 +1,9 @@
-package baekjoon;
 
 import java.io.*;
 import java.util.*;
 
 public class p30804 {
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -23,7 +22,7 @@ public class p30804 {
 
     private static void decrease(int n) {
         int count = counter.get(arr[n]);
-        
+
         if (count == 1) {
             counter.remove(arr[n]);
             return;
@@ -56,7 +55,7 @@ public class p30804 {
 
 
     public static void main(String[] args) throws Exception {
-   
+
         N = Integer.parseInt(br.readLine());
         arr = new int[N];
 

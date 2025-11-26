@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.*;
 import java.util.*;
@@ -19,7 +18,7 @@ public class p2512 {
     private static int N, M, low = 0, high = -1;
 
     private static void parametricSearch() {
-        
+
         while (low <= high) {
             int mid = (low + high) / 2,
                 sum = 0;
@@ -32,9 +31,9 @@ public class p2512 {
             else high = mid - 1;
         }
     }
-    
+
     public static void main(String[] args) throws Exception {
-        
+
         N = Integer.parseInt(br.readLine());
         numbers = new int[N];
 

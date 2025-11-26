@@ -1,10 +1,9 @@
-package baekjoon;
 
 import java.io.*;
 import java.util.*;
 
 public class p18116 {
-    
+
     private static final BufferedReader br = new BufferedReader(
         new InputStreamReader(System.in)
     );
@@ -36,7 +35,7 @@ public class p18116 {
         parents[b] = a;
         ranks[a] += ranks[b];
         ranks[b] = 0;
-    } 
+    }
 
     public static void main(String[] args) throws Exception {
         N = Integer.parseInt(br.readLine());
@@ -54,7 +53,7 @@ public class p18116 {
 
             String comm = st.nextToken();
             int a = Integer.parseInt(st.nextToken());
-                
+
             if (comm.equals("I")) {
                 int b = Integer.parseInt(st.nextToken());
 

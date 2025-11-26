@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.*;
 import java.util.*;
@@ -29,13 +28,13 @@ public class p1504 {
     private static final int MAX = (800 * 1000) * 10;
 
     private static StringTokenizer st;
-    
+
     private static int N, E, a, b, c, v1, v2;
 
     private static List<Node>[] graph;
 
     private static int[] dijkstra(int start) {
-       
+
         Queue<Node> queue = new PriorityQueue<>();
         queue.add(new Node(start, 0));
 
@@ -60,7 +59,7 @@ public class p1504 {
 
         return dists;
     }
-    
+
 
     public static void main(String[] args) throws Exception {
         st = new StringTokenizer(br.readLine());
@@ -109,5 +108,5 @@ public class p1504 {
 
         bw.flush();
     }
-    
+
 }

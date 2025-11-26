@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -40,7 +39,7 @@ public class p1292 {
 
         bw.write(answer + "\n");
         bw.flush();
-    
+
     }
 
 }

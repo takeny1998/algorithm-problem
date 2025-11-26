@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -7,7 +6,7 @@ import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
 public class p20040 {
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -17,7 +16,7 @@ public class p20040 {
     private static int[] parents, ranks;
 
     private static int N, M, a, b;
- 
+
     private static int find(int x) {
         if (parents[x] == x) return x;
         return parents[x] = find(parents[x]);
@@ -38,7 +37,7 @@ public class p20040 {
         }
 
         return false;
-    } 
+    }
 
     public static void main(String[] args) throws Exception {
 
@@ -70,7 +69,7 @@ public class p20040 {
             m ++;
         }
 
-        
+
         bw.write(answer + "\n");
         bw.flush();
     }

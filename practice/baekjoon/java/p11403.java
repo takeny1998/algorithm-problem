@@ -1,10 +1,9 @@
-package baekjoon;
 
 import java.io.*;
 import java.util.*;
 
 public class p11403 {
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -18,7 +17,7 @@ public class p11403 {
     private static final int MAX = 10000000;
 
     public static void main(String[] args) throws Exception {
-        
+
         N = Integer.parseInt(br.readLine());
 
         matrix = new int[N][N];
@@ -46,7 +45,7 @@ public class p11403 {
                 }
             }
         }
-        
+
         for (int[] arr : matrix) {
             for (int elm : arr) {
                 bw.write((elm == MAX ? 0 : 1) + " ");

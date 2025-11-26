@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -8,9 +7,9 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class p2073 {
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    
+
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
     private static StringTokenizer st;
@@ -27,7 +26,7 @@ public class p2073 {
 
         D = Integer.parseInt(st.nextToken());
         P = Integer.parseInt(st.nextToken());
-        
+
         L = new int[P + 1];
         C = new int[P + 1];
 
@@ -35,14 +34,14 @@ public class p2073 {
 
         for (int i = 1; i <= P; i ++) {
             st = new StringTokenizer(br.readLine());
-            
+
             L[i] = Integer.parseInt(st.nextToken());
             C[i] = Integer.parseInt(st.nextToken());
 
         }
 
         dp[0] = Integer.MAX_VALUE;
-        
+
         for (int i = 1; i <= P; i ++) {
             // 역방향으로 순회하는 이유?
             // - dp[j - L[i]] 로 현재 이전 인덱스에 접근함

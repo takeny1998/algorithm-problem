@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -7,7 +6,7 @@ import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
 public class p6603 {
-    
+
 
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -34,18 +33,18 @@ public class p6603 {
         dfs(i + 1, n + 1);
         dfs(i + 1, n);
     }
-    
+
 
     public static void main(String[] args) throws Exception {
 
-        
+
         while (true) {
             st = new StringTokenizer(br.readLine());
             k = Integer.parseInt(st.nextToken());
 
             if (k == 0) break;
 
-            
+
             nums = new int[k];
             answer = new int[6];
 
@@ -53,7 +52,7 @@ public class p6603 {
                 nums[i] = Integer.parseInt(st.nextToken());
             }
 
-            
+
             dfs(0, 0);
             bw.write("\n");
         }

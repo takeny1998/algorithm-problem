@@ -1,10 +1,9 @@
-package baekjoon;
 
 import java.io.*;
 import java.util.*;
 
 public class p22862 {
-    
+
     private static final BufferedReader br = new BufferedReader(
         new InputStreamReader(System.in)
     );
@@ -46,17 +45,17 @@ public class p22862 {
         K = Integer.parseInt(st.nextToken());
 
         nums = new int[N];
-        
+
         st = new StringTokenizer(br.readLine());
         for (int i = 0; i < N; i ++) {
             nums[i] = Integer.parseInt(st.nextToken());
         }
 
         twoPointer();
-        
+
         bw.write(answer + "\n");
         bw.flush();
     }
 
-    
+
 }

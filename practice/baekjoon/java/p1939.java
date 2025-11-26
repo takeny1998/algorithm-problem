@@ -1,10 +1,9 @@
-package baekjoon;
 
 import java.io.*;
 import java.util.*;
 
 public class p1939 {
-    
+
     private static class Edge {
 
         private int to, weight;
@@ -15,7 +14,7 @@ public class p1939 {
         }
 
     }
-    
+
     private static final BufferedReader br = new BufferedReader(
         new InputStreamReader(System.in)
     );
@@ -61,9 +60,9 @@ public class p1939 {
             else high = mid - 1;
         }
     }
-    
+
     public static void main(String[] args) throws Exception {
-        
+
         st = new StringTokenizer(br.readLine());
 
         N = Integer.parseInt(st.nextToken());
@@ -75,7 +74,7 @@ public class p1939 {
 
         for (int i = 0; i < M; i ++) {
             st = new StringTokenizer(br.readLine());
-            
+
             int from = Integer.parseInt(st.nextToken());
             int to = Integer.parseInt(st.nextToken());
             int weight = Integer.parseInt(st.nextToken());
@@ -89,7 +88,7 @@ public class p1939 {
         E = Integer.parseInt(st.nextToken());
 
         parametricSearch();
-        
+
         bw.write(answer + "\n");
         bw.flush();
     }

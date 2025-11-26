@@ -1,14 +1,13 @@
-package baekjoon;
 
 import java.io.*;
 import java.util.*;
 
 public class p14719 {
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-   
+
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-   
+
     private static StringTokenizer st;
 
     private static int H, W = 0;

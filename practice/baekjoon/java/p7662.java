@@ -1,10 +1,9 @@
-package baekjoon;
 
 import java.io.*;
 import java.util.*;
 
 public class p7662 {
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -34,7 +33,7 @@ public class p7662 {
             if (count == 0) continue;
             if (count == 1) map.remove(num);
             else map.put(num, count - 1);
-            
+
             break;
         }
 
@@ -46,7 +45,7 @@ public class p7662 {
         T = Integer.parseInt(br.readLine());
 
         for (int t = 0; t < T; t ++) {
-            minQ = new PriorityQueue<>(); 
+            minQ = new PriorityQueue<>();
             maxQ = new PriorityQueue<>(Collections.reverseOrder());
             map = new HashMap<>();
 

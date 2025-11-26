@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -7,7 +6,7 @@ import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
 public class p3079 {
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -17,7 +16,7 @@ public class p3079 {
     private static int[] T;
 
     private static int N, M;
-    
+
     private static long start = Long.MAX_VALUE, end = 0;
 
     private static long parametricSearch() {
@@ -49,7 +48,7 @@ public class p3079 {
         M = Integer.parseInt(st.nextToken());
 
         T = new int[N];
-        
+
 
         for (int i = 0; i < N; i ++) {
             T[i] = Integer.parseInt(br.readLine());

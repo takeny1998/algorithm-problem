@@ -1,9 +1,8 @@
-package baekjoon;
 
 import java.io.*;
 
 public class p5525 {
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));

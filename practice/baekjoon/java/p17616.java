@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -11,11 +10,11 @@ import java.util.Map;
 import java.util.StringTokenizer;
 
 public class p17616 {
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-    
+
     private static StringTokenizer st;
 
     private static int N, M, X, down, up;
@@ -31,7 +30,7 @@ public class p17616 {
         visited[i] = true;
 
         if (i != X) up ++;
-        
+
         for (int next : edges.getOrDefault(i, List.of())) {
             dfs(next);
         }
@@ -40,7 +39,7 @@ public class p17616 {
     private static void reverseDfs(int i) {
         if (visited[i]) return;
         visited[i] = true;
-        
+
         if (i != X) down ++;
 
         for (int next : reverseEdges.getOrDefault(i, List.of())) {

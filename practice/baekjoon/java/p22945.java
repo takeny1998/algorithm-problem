@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -7,7 +6,7 @@ import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
 public class p22945 {
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -36,7 +35,7 @@ public class p22945 {
             final int score = (right - left - 1) * Math.min(x[left], x[right]);
 
             answer = Math.max(answer, score);
-            
+
             if (x[left] <= x[right]) left ++;
             else right --;
         }

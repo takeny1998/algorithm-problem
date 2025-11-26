@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -13,9 +12,9 @@ import java.util.Set;
 import java.util.StringTokenizer;
 
 public class p30805 {
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    
+
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
     private static StringTokenizer st;
@@ -30,7 +29,7 @@ public class p30805 {
 
 
     private static void dfs(int y, int x, List<Integer> lcs) {
-        
+
         if (y == 0 || x == 0) {
             List<Integer> answer = new ArrayList<>(lcs);
             Collections.reverse(answer);
@@ -49,7 +48,7 @@ public class p30805 {
     }
 
     public static void main(String[] args) throws Exception {
-        
+
         N = Integer.parseInt(br.readLine());
         A = new int[N + 1];
 
@@ -57,7 +56,7 @@ public class p30805 {
         for (int i = 1; i <= N; i ++) {
             A[i] = Integer.parseInt(st.nextToken());
         }
-        
+
         M = Integer.parseInt(br.readLine());
         B = new int[M + 1];
 
@@ -80,7 +79,7 @@ public class p30805 {
 
         dfs(N, M, new ArrayList<>());
 
-        
+
         List<List<Integer>> list = new ArrayList<>(answers);
 
         list.sort(new Comparator<>() {
@@ -93,11 +92,11 @@ public class p30805 {
                 }
 
                 return b.size() - a.size();
-           } 
+           }
         });
 
         bw.write(list.get(0).size() + "\n");
-        
+
         for (int elm : list.get(0)) {
             bw.write(elm + " ");
         }

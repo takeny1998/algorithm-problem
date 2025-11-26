@@ -1,13 +1,12 @@
-package baekjoon;
 
 import java.io.*;
 
 public class p20442 {
 
-    private static final BufferedReader br = 
+    private static final BufferedReader br =
             new BufferedReader(new InputStreamReader(System.in));
 
-    private static final BufferedWriter bw = 
+    private static final BufferedWriter bw =
             new BufferedWriter(new OutputStreamWriter(System.out));
 
     private static char[] chars;
@@ -39,7 +38,7 @@ public class p20442 {
         chars = br.readLine().toCharArray();
 
         N = chars.length;
-        
+
         ksums = new int[N + 1];
         rsums = new int[N + 1];
 

@@ -1,16 +1,15 @@
-package baekjoon;
 
 import java.io.*;
 
 public class p1541 {
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-    
+
     public static void main(String[] args) throws Exception {
         String[] exprs = br.readLine().split("-");
-        
+
         int answer = 0;
 
         for (int i = 0; i < exprs.length; i ++) {
@@ -25,7 +24,7 @@ public class p1541 {
             } else {
                 num = Integer.parseInt(expr);
             }
-            
+
             if (i == 0) answer += num;
             else answer -= num;
         }

@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.*;
 import java.util.StringTokenizer;
@@ -60,14 +59,14 @@ public class p6549 {
 
             maxSize = 0;
             initSegmentTree();
-            
+
             // 히스토그램의 높이 배열 채우기
             num = new int[n + 1];
             num[0] = Integer.MAX_VALUE;
             for (int i = 1; i <= n; i ++) {
                 num[i] = Integer.parseInt(st.nextToken());
             }
-            
+
             // leaf node에 각 인덱스를 할당
             for (int i = leafPtr; i < (leafPtr + n); i ++) {
                 tree[i] = (i - leafPtr) + 1;

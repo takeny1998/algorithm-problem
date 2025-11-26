@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.*;
 import java.util.*;
@@ -22,7 +21,7 @@ public class p17352 {
     private static List<List<Integer>> graph;
 
     private static void bfs(int start) {
-        
+
         Queue<Integer> queue = new ArrayDeque<>();
 
         queue.add(start);
@@ -34,14 +33,14 @@ public class p17352 {
             for (int next : graph.get(curt)) {
                 if (groups[next] != 0) continue;
                 groups[next] = groupNum;
-                
+
                 queue.add(next);
             }
         }
     }
 
     public static void main(String[] args) throws Exception {
-        
+
         N = Integer.parseInt(br.readLine());
         graph = new ArrayList<>();
         groups = new int[N + 1];
@@ -81,5 +80,5 @@ public class p17352 {
         }
         bw.flush();
     }
-    
+
 }

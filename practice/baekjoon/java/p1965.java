@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -36,9 +35,9 @@ public class p1965 {
         int answer = 0;
 
         for (int i = 1; i < n; i ++) {
-            
+
             int leftMax = 0;
-            
+
             for (int r = 0; r < i; r ++) {
                 if (boxes[r] >= boxes[i]) continue;
                 leftMax = Math.max(leftMax, dp[r]);
@@ -52,5 +51,5 @@ public class p1965 {
         bw.flush();
 
     }
-    
+
 }

@@ -1,10 +1,9 @@
-package baekjoon;
 
 import java.io.*;
 import java.util.*;
 
 public class p1916 {
-    
+
     private static class Node implements Comparable<Node> {
 
         private int to, dist;
@@ -20,7 +19,7 @@ public class p1916 {
         }
 
     }
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -53,7 +52,7 @@ public class p1916 {
                 int dist = curt.dist + next.dist;
 
                 if (dist >= dists[next.to]) continue;
-                
+
                 dists[next.to] = dist;
                 queue.add(new Node(next.to, dist));
             }
@@ -68,7 +67,7 @@ public class p1916 {
         for (int i = 0; i <= N; i ++) {
             graph.add(new ArrayList<>());
         }
-        
+
         M = Integer.parseInt(br.readLine());
         for (int i = 0; i < M; i ++) {
             st = new StringTokenizer(br.readLine());

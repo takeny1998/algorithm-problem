@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -10,7 +9,7 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 public class p1082 {
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -20,7 +19,7 @@ public class p1082 {
     private static Number[] P;
 
     private static int N, M;
-    
+
     private static List<Number> answer = new ArrayList<>();
 
     private static class Number implements Comparable<Number> {
@@ -39,7 +38,7 @@ public class p1082 {
             }
             return price - b.price;
         }
-        
+
     }
 
     public static void main(String[] args) throws Exception {

@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.*;
 import java.util.*;
@@ -18,7 +17,7 @@ public class p11047 {
     public static void main(String[] args) throws Exception {
 
         st = new StringTokenizer(br.readLine());
-        
+
         N = Integer.parseInt(st.nextToken());
         K = Integer.parseInt(st.nextToken());
 

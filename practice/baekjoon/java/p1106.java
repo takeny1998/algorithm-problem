@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -19,9 +18,9 @@ public class p1106 {
         }
 
     }
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    
+
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
     private static StringTokenizer st;
@@ -45,7 +44,7 @@ public class p1106 {
 
         N = Integer.parseInt(st.nextToken());
         nodes = new Node[N];
-        
+
         for (int i = 0; i < N; i ++) {
             st = new StringTokenizer(br.readLine());
             nodes[i] = new Node(Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken()));

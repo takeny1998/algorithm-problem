@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.*;
 import java.util.StringTokenizer;
@@ -30,7 +29,7 @@ public class p1987 {
     }
 
     public static void main(String[] args) throws IOException {
-        
+
         st = new StringTokenizer(br.readLine());
 
         R = Integer.parseInt(st.nextToken());

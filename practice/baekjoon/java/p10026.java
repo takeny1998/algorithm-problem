@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -43,11 +42,11 @@ public class p10026 {
 
             for (int d = 0; d < 4; d ++) {
                 int ny = node.y + dy[d], nx = node.x + dx[d];
-                
+
                 if (ny < 0 || ny >= N || nx < 0 || nx >= N) continue;
                 if (areaA[ny][nx] != 0) continue;
                 if (arr[ny][nx] != arr[node.y][node.x]) continue;
-                
+
                 areaA[ny][nx] = cntA;
                 queue.add(new Node(ny, nx));
             }
@@ -68,12 +67,12 @@ public class p10026 {
 
             for (int d = 0; d < 4; d ++) {
                 int ny = node.y + dy[d], nx = node.x + dx[d];
-                
+
                 if (ny < 0 || ny >= N || nx < 0 || nx >= N) continue;
                 if (areaB[ny][nx] != 0) continue;
-               
-                if ((arr[ny][nx] == arr[node.y][node.x]) 
-                    || (arr[ny][nx] == 'G' && arr[node.y][node.x] == 'R') 
+
+                if ((arr[ny][nx] == arr[node.y][node.x])
+                    || (arr[ny][nx] == 'G' && arr[node.y][node.x] == 'R')
                     || (arr[ny][nx] == 'R' && arr[node.y][node.x] == 'G')) {
 
                     areaB[ny][nx] = cntB;

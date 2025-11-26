@@ -1,10 +1,9 @@
-package baekjoon;
 
 import java.io.*;
 import java.util.*;
 
 public class p21921 {
-    
+
     private static final BufferedReader br = new BufferedReader(
         new InputStreamReader(System.in)
     );
@@ -21,7 +20,7 @@ public class p21921 {
 
     private static void slidingWindow() {
         int left = 0, right = 0;
-        
+
         int sum = visits[0];
 
         while (left <= right) {
@@ -41,19 +40,19 @@ public class p21921 {
 
     public static void main(String[] args) throws Exception {
         st = new StringTokenizer(br.readLine());
-        
+
         N = Integer.parseInt(st.nextToken());
         X = Integer.parseInt(st.nextToken());
 
         visits = new int[N];
-        
+
         st = new StringTokenizer(br.readLine());
         for (int i = 0; i < N; i ++) {
             visits[i] = Integer.parseInt(st.nextToken());
         }
 
         slidingWindow();
-        
+
         if (maxVisit == 0) {
             bw.write("SAD\n");
         } else {

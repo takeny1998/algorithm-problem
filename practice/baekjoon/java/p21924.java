@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -8,9 +7,9 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class p21924 {
-   
+
     private static class Edge implements Comparable<Edge> {
-        
+
         private final int from, to, weight;
 
         Edge(int from, int to, int weight) {
@@ -55,7 +54,7 @@ public class p21924 {
             b = t;
         }
         C[b] = a;
-        
+
         if (R[a] == R[b]) R[a] ++;
         return true;
     }
@@ -98,13 +97,13 @@ public class p21924 {
             int from = E[i].from;
             int to = E[i].to;
             int weight = E[i].weight;
-            
+
             if (!union(from, to)) continue;
 
             picked ++;
             pickedWeight += weight;
         }
-        
+
 
         if (picked != N - 1) {
             bw.write("-1\n");

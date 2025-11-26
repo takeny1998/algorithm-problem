@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -10,9 +9,9 @@ import java.util.Stack;
 import java.util.StringTokenizer;
 
 public class p1918 {
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    
+
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
     private static StringTokenizer st;
@@ -24,12 +23,12 @@ public class p1918 {
     private static final Map<Character, Integer> priority = Map.of(
         '(', 3, ')', 3,
         '*', 1, '/', 1,
-        '+', 2, '-', 2    
+        '+', 2, '-', 2
     );
 
     public static void main(String[] args) throws Exception {
         chars = br.readLine().toCharArray();
-        
+
         for (int i = 0; i < chars.length; i ++) {
             char character = chars[i];
 
@@ -37,7 +36,7 @@ public class p1918 {
                 stack.add(character);
                 continue;
             }
-            
+
             if (character == ')') {
                 while (!stack.isEmpty() && stack.peek() != '(') {
                     bw.write(stack.pop() + "");
@@ -66,5 +65,5 @@ public class p1918 {
         bw.flush();
     }
 
-    
+
 }

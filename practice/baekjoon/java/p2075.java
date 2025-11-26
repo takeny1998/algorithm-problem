@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -27,7 +26,7 @@ public class p2075 {
     public static void main(String[] args) throws Exception {
 
         N = Integer.parseInt(br.readLine());
-        
+
 
         for (int y = 0; y < N; y ++) {
             st = new StringTokenizer(br.readLine());
@@ -45,7 +44,7 @@ public class p2075 {
                 }
             }
         }
-    
+
         for (int i = 0; i < N; i ++) {
             maxQueue.add(minQueue.poll());
         }

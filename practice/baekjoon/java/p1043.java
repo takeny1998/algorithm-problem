@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.*;
 import java.util.*;
@@ -53,7 +52,7 @@ public class p1043 {
             parties.add(new ArrayList<>());
 
             st = new StringTokenizer(br.readLine());
-            
+
             int N = Integer.parseInt(st.nextToken());
 
             for (int n = 0; n < N; n ++) {
@@ -66,7 +65,7 @@ public class p1043 {
             }
         }
 
-       
+
         int answer = 0;
 
         for (List<Integer> party : parties) {

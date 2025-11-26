@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -6,7 +5,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 public class p1958 {
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -29,7 +28,7 @@ public class p1958 {
                         dp[a][b][c] = dp[a - 1][b - 1][c - 1] + 1;
                     } else {
                         dp[a][b][c] = Math.max(
-                            dp[a - 1][b][c], 
+                            dp[a - 1][b][c],
                             Math.max(dp[a][b - 1][c], dp[a][b][c - 1]));
                     }
                 }

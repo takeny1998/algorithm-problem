@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -36,7 +35,7 @@ public class p2167 {
         }
 
         K = Integer.parseInt(br.readLine());
-        
+
         for (int k = 0; k < K; k ++) {
             st = new StringTokenizer(br.readLine());
 

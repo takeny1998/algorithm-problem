@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -8,7 +7,7 @@ import java.util.Arrays;
 import java.util.Collections;
 
 public class p1758 {
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -20,7 +19,7 @@ public class p1758 {
     private static long answer = 0L;
 
     public static void main(String[] args) throws Exception {
-        
+
         N = Integer.parseInt(br.readLine());
         tips = new Integer[N];
 

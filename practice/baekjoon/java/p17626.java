@@ -1,10 +1,9 @@
-package baekjoon;
 
 import java.io.*;
 import java.util.*;
 
 public class p17626 {
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -33,6 +32,6 @@ public class p17626 {
 
         bw.write(dp[n] + "\n");
         bw.flush();
-        
+
     }
 }

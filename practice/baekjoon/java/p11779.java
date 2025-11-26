@@ -1,10 +1,9 @@
-package baekjoon;
 
 import java.io.*;
 import java.util.*;
 
 public class p11779 {
-    
+
     private static class Node implements Comparable<Node> {
 
         private int to, dist;
@@ -20,7 +19,7 @@ public class p11779 {
         }
 
     }
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -65,7 +64,7 @@ public class p11779 {
         for (int i = 0; i <= N; i ++) {
             graph.add(new ArrayList<>());
         }
-        
+
         M = Integer.parseInt(br.readLine());
         for (int i = 0; i < M; i ++) {
             st = new StringTokenizer(br.readLine());
@@ -76,7 +75,7 @@ public class p11779 {
 
             graph.get(from).add(new Node(to, dist));
         }
-        
+
         dists = new int[N + 1];
         Arrays.fill(dists, Integer.MAX_VALUE);
 
@@ -102,7 +101,7 @@ public class p11779 {
         }
 
         bw.write(route.size() + "\n");
-       
+
         for (int i = route.size() - 1; i >= 0; i --) {
             bw.write(route.get(i) + " ");
         }

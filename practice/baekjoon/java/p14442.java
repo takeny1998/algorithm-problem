@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -24,9 +23,9 @@ public class p14442 {
         }
 
     }
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    
+
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
     private static final int[] DY = { -1, 0, 1, 0 }, DX = { 0, 1, 0, -1 };
@@ -61,10 +60,10 @@ public class p14442 {
                     if (next.k > K) continue;
                 }
                 if (visited[next.k][next.y][next.x]) continue;
-                
+
                 visited[next.k][next.y][next.x] = true;
                 dist[next.k][next.y][next.x] = next.d;
-                
+
                 queue.add(next);
             }
         }
@@ -92,14 +91,14 @@ public class p14442 {
 
         for (int n = 0; n < N; n ++) {
             char[] elements = br.readLine().toCharArray();
-            
+
             for (int m = 0; m < M; m ++) {
                 matrix[n][m] = Integer.parseInt(elements[m] + "");
             }
         }
 
         bfs();
-        
+
         int answer = Integer.MAX_VALUE;
 
         for (int k = 0; k <= K; k ++) {

@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -22,7 +21,7 @@ public class p21736 {
     }
 
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    
+
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
     private static final int[] DY = { -1, 0, 1, 0 }, DX = { 0, 1, 0, -1 };
@@ -38,7 +37,7 @@ public class p21736 {
     private static void bfs() {
 
         Queue<Element> queue = new ArrayDeque<>();
-        
+
         queue.add(new Element(SY, SX));
         visited[SY][SX] = true;
 
@@ -54,7 +53,7 @@ public class p21736 {
                 if (field[next.y][next.x] == 'X') continue;
 
                 visited[next.y][next.x] = true;
-                
+
                 if (field[next.y][next.x] == 'P') {
                     answer ++;
                 }
@@ -63,7 +62,7 @@ public class p21736 {
             }
         }
     }
-    
+
     public static void main(String[] args) throws Exception {
         st = new StringTokenizer(br.readLine());
 

@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.*;
 import java.util.*;
@@ -31,5 +30,5 @@ public class p2751 {
         }
         bw.flush();
     }
-    
+
 }

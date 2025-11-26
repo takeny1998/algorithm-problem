@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -8,7 +7,7 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class p7795 {
-    
+
 
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -46,7 +45,7 @@ public class p7795 {
 
             N = Integer.parseInt(st.nextToken());
             A = new int[N];
-            
+
             M = Integer.parseInt(st.nextToken());
             B = new int[M];
 
@@ -71,7 +70,7 @@ public class p7795 {
                 } else {
                     answer += end;
                 }
-            
+
             }
             bw.write(answer + "\n");
         }

@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -14,7 +13,7 @@ public class p2304 {
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
     private static StringTokenizer st;
-    
+
     private static int N;
 
     private static final int[] ys = new int[1500];
@@ -35,7 +34,7 @@ public class p2304 {
         for (int n = 0; n < N; n ++) {
             st = new StringTokenizer(br.readLine());
 
-            ys[Integer.parseInt(st.nextToken())] = Integer.parseInt(st.nextToken());     
+            ys[Integer.parseInt(st.nextToken())] = Integer.parseInt(st.nextToken());
         }
 
 
@@ -49,7 +48,7 @@ public class p2304 {
             }
 
             leftSize += (leftMax * leftMaxSize);
-            
+
             leftMaxSize = 0;
             leftMax = y;
             leftPtr = i;
@@ -71,10 +70,10 @@ public class p2304 {
             rightMax = y;
         }
 
-        
+
         bw.write((leftSize + rightSize + leftMax) + "\n");
 
         bw.flush();
     }
-    
+
 }

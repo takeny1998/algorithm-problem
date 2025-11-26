@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.*;
 import java.util.*;
@@ -17,13 +16,13 @@ public class p7569 {
         }
 
     }
-    
+
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-    private static final int[] DY = { -1, 0, 1, 0, 0, 0 }, 
-                               DX = { 0, 1, 0, -1, 0, 0 }, 
+    private static final int[] DY = { -1, 0, 1, 0, 0, 0 },
+                               DX = { 0, 1, 0, -1, 0, 0 },
                                DZ = { 0, 0, 0, 0, 1, -1 };
 
     private static Queue<Element> queue = new ArrayDeque<>();
@@ -41,7 +40,7 @@ public class p7569 {
             for (int d = 0; d < 6; d ++) {
                 Element next = new Element(
                     curt.z + DZ[d], curt.y + DY[d], curt.x + DX[d], curt.w + 1);
-                
+
                 if (next.z < 0 || next.z >= H || next.y < 0 || next.y >= N || next.x < 0 || next.x >= M) continue;
                 if (tenser[next.z][next.y][next.x] != 0) continue;
                 tenser[next.z][next.y][next.x] = next.w;
@@ -64,7 +63,7 @@ public class p7569 {
             for (int n = 0; n < N; n ++) {
                 st = new StringTokenizer(br.readLine());
                 for (int m = 0; m < M; m ++) {
-                    tenser[h][n][m] = Integer.parseInt(st.nextToken());    
+                    tenser[h][n][m] = Integer.parseInt(st.nextToken());
                 }
             }
         }

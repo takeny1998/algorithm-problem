@@ -1,16 +1,15 @@
-package baekjoon;
 
 import java.io.*;
 import java.util.*;
 
 public class p11286 {
-    
+
     private static class Element implements Comparable<Element> {
 
         private int value, abs;
 
-        Element(int value) { 
-            this.value = value; 
+        Element(int value) {
+            this.value = value;
             this.abs = Math.abs(value);
         }
 

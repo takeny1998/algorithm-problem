@@ -1,16 +1,15 @@
-package baekjoon;
 
 import java.io.*;
 import java.util.*;
 
 public class p1874 {
-    
-    private static final BufferedReader br = 
+
+    private static final BufferedReader br =
             new BufferedReader(new InputStreamReader(System.in));
 
-    private static final BufferedWriter bw = 
+    private static final BufferedWriter bw =
             new BufferedWriter(new OutputStreamWriter(System.out));
-    
+
     private static Stack<Integer> stack;
 
     private static int N, ptr;

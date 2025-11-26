@@ -1,4 +1,3 @@
-package baekjoon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -10,7 +9,7 @@ import java.util.StringTokenizer;
 public class p9007 {
 
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    
+
     private static final BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
     private static StringTokenizer st;
@@ -53,12 +52,12 @@ public class p9007 {
         for (int t = 0; t < T; t ++) {
             answer = Integer.MAX_VALUE;
             absDiff = Integer.MAX_VALUE;
-            
+
             st = new StringTokenizer(br.readLine());
-            
+
             K = Integer.parseInt(st.nextToken());
             N = Integer.parseInt(st.nextToken());
-            
+
             C = new int[4][N];
 
             for (int i = 0; i < 4; i ++) {
