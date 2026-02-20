@@ -14,7 +14,6 @@
 		"editor.tabSize": 4,
 		"editor.insertSpaces": true,
 		"editor.renderWhitespace": "boundary", // 공백 보기
-		"files.trimTrailingWhitespace": true, // 줄 끝 공백 제거
 		"files.insertFinalNewline": true,
 		// ===== 자바 전용 기본 =====
 		"[java]": {
