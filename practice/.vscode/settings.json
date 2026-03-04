@@ -9,7 +9,7 @@
   "editor.parameterHints.enabled": false,
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.snippetSuggestions": "none",
-  "editor.hover.enabled": false,
+  "editor.hover.enabled": "off",
   "java.project.sourcePaths": [
       "src"
   ],
