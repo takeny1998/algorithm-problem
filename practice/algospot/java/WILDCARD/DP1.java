@@ -1,3 +1,5 @@
+package algospot.java.WILDCARD;
+
 import java.io.*;
 import java.util.*;
 
